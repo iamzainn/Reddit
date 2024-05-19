@@ -4,6 +4,7 @@ import "../app/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navbar } from "@/components/Navbar";
+import { Toaster } from "@/components/ui/toaster"
 
 
 const fontSans = FontSans({
@@ -37,6 +38,7 @@ export default function RootLayout({
           >
             <Navbar></Navbar>
            {children}
+           <Toaster />
           </ThemeProvider>
       
       </body>
